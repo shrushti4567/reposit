@@ -15,7 +15,7 @@ pipeline {
 							                      steps {
 										                     sh "rm -rf *"
 												     sh "yum install httpd -y"
-													 sh "cd var/www/html"
+													 sh "cd /var/www/html"
 													 echo "this is index file" >> index.html /var/www/html
 													 sh "chmod 777 index.html"
 													 }
